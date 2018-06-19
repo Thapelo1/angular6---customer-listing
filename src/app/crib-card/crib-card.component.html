@@ -1,0 +1,52 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+      <h2 class="panel-title">{{ crib.firstname + ' ' + crib.surname }}</h2>
+      <span><img class="img-responsive user-image" src="assets/{{ crib.img }}.png" alt="{{ crib.img }}"></span>
+    </div>
+    <div class="panel-body">
+
+      <div class=customer-details>
+          <div *ngIf="!crib.showDetails">
+
+          <p><strong> First name:</strong><br/> {{ crib.firstname }}</p>
+          <p><strong>Surname:</strong> <br/> {{ crib.surname }}</p>
+          <p><strong>ID no:</strong> <br/> {{ crib.zaid }}</p>
+
+          <div class="btn-group btn-group-justified">
+              <a
+            class="btn btn-success btn-block"
+            *ngIf="!crib.showDetails"
+            (click)="crib.showDetails = !crib.showDetails">
+            Policy
+          </a>
+            </div>
+
+
+
+        </div>
+      </div>
+
+      <!-- Policy details -->
+<div *ngIf="crib.showDetails">
+    <div class="details">
+
+      <p>Policy number: {{ crib.PolicyNumber }}</p>
+
+      <p>Debit order date: {{ crib.DebitOrderDate }}</p>
+
+      <p>Policy started in: {{ crib.PolicyInceptionDate }}</p>
+
+      <p>Policy status: {{ crib.PolicyStatus }}</p>
+
+      <p>Policy premium: {{ crib.Premium }}</p>
+
+      <button
+        class="btn btn-sm btn-danger btn-block"
+        (click)="crib.showDetails = !crib.showDetails">
+        Close
+      </button>
+    </div>
+  </div>
+
+    </div>
+  </div>

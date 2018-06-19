@@ -1,0 +1,111 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h4 class="panel-title">Create new customer</h4>
+  </div>
+
+  <div class="panel-body">
+
+    <form #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)">
+
+      <div class="form-group col-sm-4">
+
+        <label class="">First name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg. John"
+          name="firstname"
+          ngModel
+          required>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg Doe"
+          name="surname"
+          ngModel
+          required>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Identifcation number</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg CCMMDDXXXXX"
+          name="zaid"
+          ngModel
+          required maxlength="11">
+      </div>
+
+
+      <div class="form-group col-sm-4">
+        <label class="">Policy number</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg XXXXXX"
+          name="PolicyNumber"
+          ngModel
+          required maxlength="6">
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Debit order date</label>
+
+          <select required ngModel name="DebitOrderDate" class="form-control" id="select">
+              <option disabled>Select date</option>
+              <option>15th</option>
+              <option>25th</option>
+              <option>Last day of the month</option>
+            </select>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Policy commencement</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg 25th July 2016"
+          name="PolicyInceptionDate"
+          ngModel
+          required>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Policy status</label>
+
+          <select required ngModel name="PolicyStatus" class="form-control" id="select">
+              <option disabled>Active/Disabled</option>
+              <option>Active</option>
+              <option>Dsiabled</option>
+            </select>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <label class="">Policy premium</label>
+
+          <select required ngModel name="Premium" class="form-control" id="select">
+            <option disabled>Active/Disabled</option>
+            <option>Premium</option>
+            <option>N/A</option>
+          </select>
+      </div>
+
+
+
+      <div class="form-group col-sm-12">
+        <button
+          class="btn btn-primary listing-button"
+          type="submit"
+          ng-show="addListing">
+            Confirm
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>

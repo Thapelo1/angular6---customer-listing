@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "firstname": "Tony",
+    "surname": "Stark",
+    "zaid": "5608095341097",
+    "DebitOrderDate": "25th",
+    "PolicyInceptionDate": "01022018",
+    "PolicyNumber": "01238483",
+    "PolicyStatus": "active",
+    "Premium": "N/A",
+    "img": "user-male"
+  },
+
+  {
+    "id": 2,
+    "firstname": "Scarlett",
+    "surname": "Witch",
+    "zaid": "8508095341097",
+    "DebitOrderDate": "15th",
+    "PolicyInceptionDate": "01022018",
+    "PolicyNumber": "01238483",
+    "PolicyStatus": "active",
+    "Premium": "Yes",
+    "img": "user-female"
+  },
+
+  {
+    "id": 3,
+    "firstname": "Steve",
+    "surname": "Rodgers",
+    "zaid": "3108016749085",
+    "DebitOrderDate": "End of month",
+    "PolicyInceptionDate": "01022018",
+    "PolicyNumber": "01238483",
+    "PolicyStatus": "active",
+    "Premium": "N/A",
+    "img": "user-male"
+  },
+
+   {
+    "id": 3,
+    "firstname": "Captain",
+    "surname": "Marvel",
+    "zaid": "2208016749085",
+    "DebitOrderDate": "15th",
+    "PolicyInceptionDate": "01022018",
+    "PolicyNumber": "01238483",
+    "PolicyStatus": "active",
+    "Premium": "N/A",
+    "img": "user-female"
+  }
+]

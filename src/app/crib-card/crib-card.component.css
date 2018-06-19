@@ -1,0 +1,9 @@
+img.img-responsive.user-image {
+  width: 50px;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
